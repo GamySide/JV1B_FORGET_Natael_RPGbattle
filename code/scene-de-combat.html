@@ -5,8 +5,25 @@
         <link rel="stylesheet" href="scene-de-combat.css" />
     </head>
     <body>
-        <div id="interface"></div>
-        <div id="dialogue">que faites vous?</div>
+        <div id="interface">
+            <div id="dialogue">que faites vous?</div>
+            <button id="atkInteraction">attaquer</button>
+            <button id="defInteraction">defendre</button>
+            <button id="skillInteraction">competence</button>
+            <div id="statistique">
+                <div id="lifeJauge">
+                    <label id="pv:">pv:</label>
+                    <progress id="pv" max="100" value="100"> 70% </progress>
+                    <label id="pv%">100%</label>
+                </div>
+                <div id="manaJauge">
+                    <label id="mana:">pm:</label>
+                    <progress id="mana" max="100" value="100"> 70% </progress>
+                    <label id="mana%">100%</label>
+                </div>
+            </div>
+        </div>
+       
         <script src="scene-de-combat.js"></script>
     </body> 
 </html>

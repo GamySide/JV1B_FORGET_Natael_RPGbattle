@@ -3,3 +3,5 @@ function statistique (pv,atk,mana) {
     var atk = atkCible;
     var mana = manaCible;
 }
+
+
