@@ -96,12 +96,15 @@ body {
     left:600px;
     font: small-caps bold 40px/1 sans-serif;
     background-repeat: no-repeat;
+    justify-content:flex-start;
+    
 }
 #lifejauge{
+    width:20px;
+    height:20px;
     display: grid;
     position: absolute;
-    justify-content:left;
-    justify-content:top;
+
     top : 10px;
     left : 10px;
 }
