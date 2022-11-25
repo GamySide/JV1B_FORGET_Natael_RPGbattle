@@ -5,3 +5,4 @@ function statistique (pv,atk,mana) {
 }
 
 
+
