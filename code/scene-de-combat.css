@@ -37,6 +37,7 @@ body {
     left:10px;
     font: small-caps bold 40px/1 sans-serif;
     background-repeat: no-repeat;
+    text-align: center;
 }
 #atkInteraction{
     display: grid;
@@ -51,7 +52,7 @@ body {
     left:430px;
     font: small-caps bold 20px/1 sans-serif;
     background-repeat: no-repeat;
-
+    text-align: center;
 }
 #defInteraction{
     display: grid;
@@ -66,7 +67,7 @@ body {
     left:430px;
     font: small-caps bold 20px/1 sans-serif;
     background-repeat: no-repeat;
-
+    text-align: center;
 }
 #skillInteraction{
     display: grid;
@@ -81,7 +82,7 @@ body {
     left:430px;
     font: small-caps bold 20px/1 sans-serif;
     background-repeat: no-repeat;
-
+    text-align: center;
 }
 #renStatistique{
     display: grid;
