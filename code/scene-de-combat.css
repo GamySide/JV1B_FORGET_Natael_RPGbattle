@@ -338,7 +338,7 @@ body {
     bottom: 250px;
     left: 200px;
 }
-#BunarockSprite{
+#BunarokSprite{
     width:200px;
     height:200px;
     position: absolute;
@@ -425,7 +425,7 @@ body {
     left: 200px;
     display:none;
 }
-#charmOnBunarock{
+#charmOnBunarok{
     width:200px;
     height:200px;
     position: absolute;
@@ -449,7 +449,7 @@ body {
     left: 200px;
     display:none;
 }
-#cutOnBunarock{
+#cutOnBunarok{
     width:200px;
     height:200px;
     position: absolute;
@@ -473,7 +473,7 @@ body {
     left: 200px;
     display:none;
 }
-#fireBoomOnBunarock{
+#fireBoomOnBunarok{
     width:200px;
     height:200px;
     position: absolute;
@@ -529,7 +529,7 @@ body {
     left: 200px;
     display:none;
 }
-#laserOnBunarock{
+#laserOnBunarok{
     width:200px;
     height:200px;
     position: absolute;
@@ -585,7 +585,7 @@ body {
     left: 200px;
     display:none;
 }
-#multihitOnBunarock{
+#multihitOnBunarok{
     width:200px;
     height:200px;
     position: absolute;
@@ -609,7 +609,7 @@ body {
     left: 200px;
     display:none;
 }
-#magicpunchOnBunarock{
+#magicpunchOnBunarok{
     width:200px;
     height:200px;
     position: absolute;
@@ -633,11 +633,83 @@ body {
     left: 200px;
     display:none;
 }
-#seismeOnBunarock{
+#seismeOnBunarok{
     width:200px;
     height:200px;
     position: absolute;
     bottom: 200px;
     left: 100px;
     display:none;
+}
+#dogenadonStatistique{
+    display: grid;
+    width: 665px;
+    height: 180px;
+    color: rgb(255, 255, 255);
+    background-color: #5c5c5c;
+    position: absolute;
+    align-items: center;
+    font: small-caps bold 40px/1 sans-serif;
+    background-repeat: no-repeat;
+    justify-content:flex-start;
+    display: none;
+}
+#dogenadonLifejauge{
+    width:20px;
+    height:20px;
+    display: grid;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+}
+#dogenadonPv{
+    background-color: rgb(128, 0, 0);
+}
+#katculubStatistique{
+    display: grid;
+    width: 665px;
+    height: 180px;
+    color: rgb(255, 255, 255);
+    background-color: #5c5c5c;
+    position: absolute;
+    align-items: center;
+    font: small-caps bold 40px/1 sans-serif;
+    background-repeat: no-repeat;
+    justify-content:flex-start;
+    display: none;
+}
+#katculubLifejauge{
+    width:20px;
+    height:20px;
+    display: grid;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+}
+#katculubPv{
+    background-color: rgb(128, 0, 0);
+}
+#bunarokStatistique{
+    display: grid;
+    width: 665px;
+    height: 180px;
+    color: rgb(255, 255, 255);
+    background-color: #5c5c5c;
+    position: absolute;
+    align-items: center;
+    font: small-caps bold 40px/1 sans-serif;
+    background-repeat: no-repeat;
+    justify-content:flex-start;
+    display: none;
+}
+#bunarokLifejauge{
+    width:20px;
+    height:20px;
+    display: grid;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+}
+#bunarokPv{
+    background-color: rgb(128, 0, 0);
 }
