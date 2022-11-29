@@ -232,3 +232,116 @@ body {
     top : 10px;
     left : 10px;
 }
+#renIdleSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    right: 300px;
+}
+#renAtkSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    right: 300px;
+    display:none;
+}
+#renSkillSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    right: 300px;
+    display:none;
+}
+#ragisIdleSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 200px;
+    right: 250px;
+}
+#ragisAtkSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 200px;
+    right: 250px;
+    display:none;
+}
+#ragisSkillSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 200px;
+    right: 250px;
+    display:none;
+}
+#alliaIdleSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 320px;
+    right: 200px;
+}
+#alliaAtkSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 320px;
+    right: 200px;
+    display:none;
+}
+#alliaSkillSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 320px;
+    right: 200px;
+    display:none;
+}
+#succubisIdleSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 190px;
+    right: 120px;
+}
+#succubisAtkSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 190px;
+    right: 120px;
+    display:none;
+}
+#succubisSkillSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 190px;
+    right: 120px;
+    display:none;
+}
+#DogenadonSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 190px;
+    right: 120px;
+}
+#katculubSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 190px;
+    right: 120px;
+}
+#BunarockSprite{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 190px;
+    right: 120px;
+}
