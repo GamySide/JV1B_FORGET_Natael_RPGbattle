@@ -345,3 +345,299 @@ body {
     bottom: 200px;
     left: 100px;
 }
+#biteOnRen{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    right: 300px;
+    display: none;
+}
+#biteOnRagis{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 170px;
+    right: 240px;
+    display: none;
+}
+#biteOnAllia{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 310px;
+    right: 150px;
+    display: none;
+}
+#biteOnSuccubis{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 180px;
+    right: 90px;
+    display: none;
+}
+#clawOnRen{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    right: 300px;
+    display: none;
+}
+#clawOnRagis{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 170px;
+    right: 240px;
+    display: none;
+}
+#clawOnAllia{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 310px;
+    right: 150px;
+    display: none;
+}
+#clawOnSuccubis{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 180px;
+    right: 90px;
+    display: none;
+}
+#charmOnDogenadon{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
+    display:none;
+}
+#charmOnKatculub{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 250px;
+    left: 200px;
+    display:none;
+}
+#charmOnBunarock{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    display:none;
+}
+#cutOnDogenadon{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
+    display:none;
+}
+#cutOnKatculub{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 250px;
+    left: 200px;
+    display:none;
+}
+#cutOnBunarock{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    display:none;
+}
+#fireBoomOnDogenadon{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
+    display:none;
+}
+#fireBoomOnKatculub{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 250px;
+    left: 200px;
+    display:none;
+}
+#fireBoomOnBunarock{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    display:none;
+}
+#healOnRen{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    right: 300px;
+    display: none;
+}
+#healOnRagis{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 170px;
+    right: 240px;
+    display: none;
+}
+#healOnAllia{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 310px;
+    right: 150px;
+    display: none;
+}
+#healOnSuccubis{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 180px;
+    right: 90px;
+    display: none;
+}
+#laserOnDogenadon{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
+    display:none;
+}
+#laserOnKatculub{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 250px;
+    left: 200px;
+    display:none;
+}
+#laserOnBunarock{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    display:none;
+}
+#tourDeRen{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 350px;
+    right: 300px;
+    display: none;
+}
+#tourDeRagis{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 220px;
+    right: 240px;
+    display: none;
+}
+#tourDeAllia{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 350px;
+    right: 150px;
+    display: none;
+}
+#tourDeSuccubis{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 220px;
+    right: 90px;
+    display: none;
+}
+#multihitOnDogenadon{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
+    display:none;
+}
+#multihitOnKatculub{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 250px;
+    left: 200px;
+    display:none;
+}
+#multihitOnBunarock{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    display:none;
+}
+#magicpunchOnDogenadon{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
+    display:none;
+}
+#magicpunchOnKatculub{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 250px;
+    left: 200px;
+    display:none;
+}
+#magicpunchOnBunarock{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    display:none;
+}
+#seismeOnDogenadon{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
+    display:none;
+}
+#seismeOnKatculub{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 250px;
+    left: 200px;
+    display:none;
+}
+#seismeOnBunarock{
+    width:200px;
+    height:200px;
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    display:none;
+}
