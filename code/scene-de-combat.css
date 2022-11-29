@@ -328,20 +328,20 @@ body {
     width:200px;
     height:200px;
     position: absolute;
-    bottom: 190px;
-    right: 120px;
+    bottom: 300px;
+    left: 300px;
 }
 #katculubSprite{
     width:200px;
     height:200px;
     position: absolute;
-    bottom: 190px;
-    right: 120px;
+    bottom: 250px;
+    left: 200px;
 }
 #BunarockSprite{
     width:200px;
     height:200px;
     position: absolute;
-    bottom: 190px;
-    right: 120px;
+    bottom: 200px;
+    left: 100px;
 }
