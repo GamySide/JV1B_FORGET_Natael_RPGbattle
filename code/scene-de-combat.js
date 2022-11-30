@@ -1,5 +1,5 @@
 class Player {
-    constructor(name,color) {
+    constructor(name, color, pv, def, atk,mana) {
         this.name = name;
 
         this.p = document.createElement('div');
@@ -8,10 +8,14 @@ class Player {
         this.p.style.width="665px";
         this.p.style.height="180px";
         document.body.appendChild(this.p);
+        this.pv = pv;
+        this.def = def;
+        this.atk = atk;
+        this.mana = mana;
     }
 }
 class Monster {
-    constructor(name,color) {
+    constructor(name, color, pv, def, atk) {
         this.name = name;
 
         this.p = document.createElement('div');
@@ -20,18 +24,20 @@ class Monster {
         this.p.style.width="665px";
         this.p.style.height="180px";
         document.body.appendChild(this.p);
+        this.pv = pv;
+        this.def = def;
+        this.atk = atk;
     }
 }
-
 let players = new Map();
-players.set("Ren", new Player("Ren", "grey"));
-players.set("Ragis", new Player("Ragis", "red"));
-players.set("Allia", new Player("Allia", "grey"));
-players.set("Succubis", new Player("Succubis", "grey"));
+players.set("Ren", new Player("Ren", "grey",100,10,20));
+players.set("Ragis", new Player("Ragis", "grey",150,0,30));
+players.set("Allia", new Player("Allia", "grey",100,5,30));
+players.set("Succubis", new Player("Succubis", "grey",200,0,10));
 let monsters = new Map();
-monsters.set("Dogemadon", new Monster("Dogemadon", "grey"));
-monsters.set("Katculub", new Monster("Katculub", "grey"));
-monsters.set("Bunarok", new Monster("Bunarok", "grey"));
+monsters.set("Dogemadon", new Monster("Dogemadon", "grey",150,5,20));
+monsters.set("Katculub", new Monster("Katculub", "grey",75,0,50));
+monsters.set("Bunarok", new Monster("Bunarok", "grey",200,10,20));
 console.log(players,monsters)
 
 let renIdleSprite = document.getElementById("renIdleSpriten");
@@ -86,6 +92,7 @@ let magicpunchOnBunarok = document.getElementById("magicpunchOnBunarok");
 let seismeOnDogenadon = document.getElementById("seismeOnDogenadon");
 let seismeOnKatculub = document.getElementById("seismeOnKatculub");
 let seismeOnBunarok = document.getElementById("seismeOnBunarok");
+
 
 
 
