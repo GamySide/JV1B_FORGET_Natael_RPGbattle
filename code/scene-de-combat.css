@@ -710,16 +710,3 @@ body {
 #bunarokPv{
     background-color: rgb(128, 0, 0);
 }
-.player{
-    display: flex;
-    position:absolute;
-    bottom:10px;
-    left:600px;
-}
-.monster{
-    display:flex;
-    position:absolute;
-}
-.player, .monster {
-    display: none;
-}
