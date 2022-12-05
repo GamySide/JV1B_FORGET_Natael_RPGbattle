@@ -1,3 +1,4 @@
+let renStat = document.getElementById("renStatistique");
 var renPv = document.getElementById("renPv").value;
 var ragisPv = document.getElementById("ragisPv").value;
 var alliaPv = document.getElementById("alliaPv").value;
