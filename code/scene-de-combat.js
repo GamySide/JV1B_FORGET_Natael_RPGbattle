@@ -1,4 +1,3 @@
-let renStat = document.getElementById("renStatistique");
 var renPv = document.getElementById("renPv").value;
 var ragisPv = document.getElementById("ragisPv").value;
 var alliaPv = document.getElementById("alliaPv").value;
@@ -21,6 +20,7 @@ var renDef = 10;
 var ragisDef = 10;
 var alliaDef = 10;
 var succubisDef = 10;
+var turn = 1
 
 console.log(renPv);
 console.log(ragisPv);
@@ -31,7 +31,71 @@ console.log(ragisMana);
 console.log(alliaMana);
 console.log(succubisMana);
 
-renStatistique.style.displayb = "block";
+document.getElementById("dogenadonSprite").addEventListener("mouseover", function(){
+    dogenadonStatistique.style.display = "block";
+    katculubStatistique.style.display = "none";
+    bunarokStatistique.style.display = "none";
+});
+document.getElementById("katculubSprite").addEventListener("mouseover", function(){
+    dogenadonStatistique.style.display = "none";
+    katculubStatistique.style.display = "block";
+    bunarokStatistique.style.display = "none";
+});
+document.getElementById("bunarokSprite").addEventListener("mouseover", function(){
+    dogenadonStatistique.style.display = "none";
+    katculubStatistique.style.display = "none";
+    bunarokStatistique.style.display = "block";
+});
+var atkSelect = document.getElementById("atkInteraction").onclick;
+var defSelect = document.getElementById("defInteraction").onclick;
+var skillSelect = document.getElementById("skillInteraction").onclick;
+var RenSelect = document.getElementById("renSprite").onclick;
+var RagisSelect = document.getElementById("ragisSprite").onclick;
+var AlliaSelect = document.getElementById("alliaSprite").onclick;
+var SuccubisSelect = document.getElementById("succubisSprite").onclick;
+var DogenadonSelect = document.getElementById("dogenadonSprite").onclick;
+var KatculubSelect = document.getElementById("katculubSprite").onclick;
+var BunarokSelect =document.getElementById("bunarokSprite").onclick;
+
+
+if(turn=1){
+    renStatistique.style.display = "block";
+    if(atkSelect=true){
+        if(DogenadonSelect=true){
+            dogenadonPv = dogenadonPv - renAtk;
+            renDef=10
+            turn++
+        }
+        else if(KatculubSelect=true){
+            katculubPv = katculubPv - renAtk;
+            renDef=10
+            turn++
+        }
+        else if(BunarokSelect=true){
+            bunarokPv = bunarokPv - renAtk;
+            renDef=10
+            turn++
+        }
+    }
+    else if(defSelect=true){
+        renDef=20
+    }
+    else if(skillSelect=true){
+        if(RenSelect=true){
+            renPv=150;
+        }
+        if(RagisSelect=true){
+            ragisPv=200;
+        }
+        if(AlliaSelect=true){
+            alliaPv=100;
+        }
+        if(SuccubisSelect=true){
+            succubisPv=100;
+        }
+
+    }
+}
 
 
 

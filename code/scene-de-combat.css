@@ -106,7 +106,7 @@ body {
     display: grid;
     position: absolute;
 
-    top : 10px;
+    top : 30px;
     left : 10px;
 }
 #renManajauge{
@@ -115,8 +115,14 @@ body {
     display: grid;
     position: absolute;
 
-    top : 10px;
+    bottom : 70px;
     left : 10px;
+}
+#ren_pv{
+    font-size:30px;
+}
+#ren_mana{
+    font-size:30px;
 }
 #alliaStatistique{
     display: grid;
@@ -140,7 +146,7 @@ body {
     display: grid;
     position: absolute;
 
-    top : 10px;
+    top : 30px;
     left : 10px;
 }
 #alliaPv{
@@ -152,8 +158,14 @@ body {
     display: grid;
     position: absolute;
 
-    top : 10px;
+    top : 70px;
     left : 10px;
+}
+#allia_pv{
+    font-size : 30px;
+}
+#allia_mana{
+    font-size : 30px;
 }
 #ragisStatistique{
     display: grid;
@@ -177,7 +189,7 @@ body {
     display: grid;
     position: absolute;
 
-    top : 10px;
+    top : 30px;
     left : 10px;
 }
 #ragisPv{
@@ -189,8 +201,14 @@ body {
     display: grid;
     position: absolute;
 
-    top : 10px;
+    top : 70px;
     left : 10px;
+}
+#ragis_pv{
+    font-size: 30px;
+}
+#ragis_mana{
+    font-size: 30px;
 }
 #succubisStatistique{
     display: grid;
@@ -214,7 +232,7 @@ body {
     display: grid;
     position: absolute;
 
-    top : 10px;
+    top : 30px;
     left : 10px;
 }
 #succubisPv{
@@ -226,8 +244,14 @@ body {
     display: grid;
     position: absolute;
 
-    top : 10px;
+    top : 70px;
     left : 10px;
+}
+#succubis_pv{
+    font-size:30px;
+}
+#succubis_pv{
+    font-size:30px;
 }
 #renIdleSprite{
     width:200px;
@@ -656,11 +680,11 @@ body {
     height:20px;
     display: grid;
     position: absolute;
-    top : 10px;
+    top : 50px;
     left : 10px;
 }
 #dogenadonPv{
-    background-color: rgb(128, 0, 0);
+    top:30px
 }
 #katculubStatistique{
     display: grid;
@@ -680,11 +704,11 @@ body {
     height:20px;
     display: grid;
     position: absolute;
-    top : 10px;
+    top : 50px;
     left : 10px;
 }
 #katculubPv{
-    background-color: rgb(128, 0, 0);
+    top:30px;
 }
 #bunarokStatistique{
     display: grid;
@@ -704,9 +728,9 @@ body {
     height:20px;
     display: grid;
     position: absolute;
-    top : 10px;
+    top : 50px;
     left : 10px;
 }
 #bunarokPv{
-    background-color: rgb(128, 0, 0);
+    top:30px
 }
