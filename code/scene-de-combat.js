@@ -34,6 +34,6 @@ renStatistique.style.displayb = "block";
 
 
 
-/*/do
+/*do
     renStatistique.style.display = "block";
 while(( renPv > 0 , ragisPv > 0 , alliaPv > 0 , succubisPv > 0 )||( dogenadon > 0 , katculub > 0 , bunarok > 0));*/
