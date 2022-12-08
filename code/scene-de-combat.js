@@ -57,33 +57,48 @@ document.getElementById("bunarokSprite").addEventListener("mouseover", function(
     katculubStatistique.style.display = "none";
     bunarokStatistique.style.display = "block";
 });
+document.getElementById("dogenadonSprite").onclick, function(){
+    dogenadonSelect = 1;
+    katculubSelect = 0;
+    bunarokSelect = 0
+};
+document.getElementById("katculubSprite").onclick, function(){
+    dogenadonSelect = 0;
+    katculubSelect = 1;
+    bunarokSelect = 0;
+};
+document.getElementById("bunarokSprite").onclick, function(){
+    dogenadonSelect = 0;
+    katculubSelect = 0;
+    bunarokSelect = 1;
+};
+
 
 atkInteraction.onclick = function(){
     if(turn==1 || turn==2 || turn==3 || turn==4){
         if(turn==1){
             renStatistique.style.display = "block";
-            if(atkInteraction==true){
+            dialog.innerHTML = "qui attaquez vous?";
+            if(dogenadonSelect==1){
                 console.log('je rentre dans le if')
-                dialog.innerHTML = "qui attaquer vous?";
-                if(dogenadonSelect==1){
-                    dogenadonPv = dogenadonPv - renAtk;
-                    renDef=10;
-                    turn++;
-                }
-                else if(katculubSelect==1){
-                    katculubPv = katculubPv - renAtk;
-                    renDef=10;
-                    turn++;
-                }
-                else if(bunarokSelect==1){
-                    bunarokPv = bunarokPv - renAtk;
-                    renDef=10;
-                    turn++;
-                }
+                dogenadonPv = dogenadonPv - renAtk;
+                renDef=10;
+                turn++;
             }
-        }     
-    }
+            else if(katculubSelect==1){
+                katculubPv = katculubPv - renAtk;
+                renDef=10;
+                turn++;
+            }
+            else if(bunarokSelect==1){
+                bunarokPv = bunarokPv - renAtk;
+                renDef=10;
+                turn++;
+            }
+        }
+    }     
 }
+
 
 
 
