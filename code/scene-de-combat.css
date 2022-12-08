@@ -149,16 +149,13 @@ body {
     top : 30px;
     left : 10px;
 }
-#alliaPv{
-    background-color: green;
-}
 #alliaManajauge{
     width:20px;
     height:20px;
     display: grid;
     position: absolute;
 
-    top : 70px;
+    bottom : 70px;
     left : 10px;
 }
 #allia_pv{
@@ -192,16 +189,13 @@ body {
     top : 30px;
     left : 10px;
 }
-#ragisPv{
-    background-color: green;
-}
 #ragisManajauge{
     width:20px;
     height:20px;
     display: grid;
     position: absolute;
 
-    top : 70px;
+    bottom : 70px;
     left : 10px;
 }
 #ragis_pv{
@@ -235,22 +229,19 @@ body {
     top : 30px;
     left : 10px;
 }
-#succubisPv{
-    background-color: green;
-}
 #succubisManajauge{
     width:20px;
     height:20px;
     display: grid;
     position: absolute;
 
-    top : 70px;
+    bottom : 70px;
     left : 10px;
 }
 #succubis_pv{
     font-size:30px;
 }
-#succubis_pv{
+#succubis_mana{
     font-size:30px;
 }
 #renIdleSprite{
@@ -259,6 +250,15 @@ body {
     position: absolute;
     bottom: 300px;
     right: 300px;
+}
+#dogenadonSprite:hover{
+    filter: drop-shadow(0 1rem 3rem red);
+}
+#katculubSprite:hover{
+    filter: drop-shadow(0 1rem 3rem red);
+}
+#bunarokSprite:hover{
+    filter: drop-shadow(0 1rem 3rem red);
 }
 #renAtkSprite{
     width:200px;

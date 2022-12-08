@@ -6,7 +6,7 @@
     </head>
     <body>
         <div id="interface">
-            <div id="dialogue">que faites vous?</div>
+            <div id="dialogue">choisissez votre cible et agissez en conséquence</div>
             <button id="atkInteraction"type="button">attaquer</button>
             <button id="defInteraction"type="button">defendre</button>
             <button id="skillInteraction"type="button">competence</button>
@@ -16,11 +16,11 @@
                 </div>
                 <div id="renLifeJauge">
                     <label id="ren_pv">pv:</label>
-                    <progress id="renPv" max="150" value="150"></progress>
+                    <progress id="renPv" min="0" max="150" value="150"></progress>
                 </div>
                 <div id="renManaJauge">
                     <label id="ren_mana">pm:</label>
-                    <progress id="renMana" max="80" value="80"></progress>
+                    <progress id="renMana" min="0" max="80" value="80"></progress>
                 </div>
             </div>
             <div id="alliaStatistique">
@@ -29,11 +29,11 @@
                 </div>
                 <div id="alliaLifeJauge">
                     <label id="allia_pv">pv:</label>
-                    <progress id="alliaPv" max="100" value="100"></progress>
+                    <progress id="alliaPv" min="0" max="100" value="100"></progress>
                 </div>
                 <div id="alliaManaJauge">
                     <label id="allia_mana">pm:</label>
-                    <progress id="alliaMana" max="200" value="200"></progress>
+                    <progress id="alliaMana" min="0" max="200" value="200"></progress>
                 </div>
             </div>
             <div id="ragisStatistique">
@@ -42,11 +42,11 @@
                 </div>
                 <div id="ragisLifeJauge">
                     <label id="ragis_pv">pv:</label>
-                    <progress id="ragisPv" max="200" value="200"></progress>
+                    <progress id="ragisPv" min="0" max="200" value="200"></progress>
                 </div>
                 <div id="ragisManaJauge">
                     <label id="ragis_mana">pm:</label>
-                    <progress id="ragisMana" max="40" value="40"></progress>
+                    <progress id="ragisMana" min="0" max="40" value="40"></progress>
                 </div>
             </div>
             <div id="succubisStatistique">
@@ -55,11 +55,11 @@
                 </div>
                 <div id="succubisLifeJauge">
                     <label id="succubis_pv">pv:</label>
-                    <progress id="succubisPv" max="100" value="100"></progress>
+                    <progress id="succubisPv" min="0" max="100" value="100"></progress>
                 </div>
                 <div id="succubisManaJauge">
                     <label id="succubis_mana">pm:</label>
-                    <progress id="succubisMana" max="160" value="160"></progress>
+                    <progress id="succubisMana" min="0" max="160" value="160"></progress>
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@
                 </div>
                 <div id="dogenadonLifeJauge">
                     <label id="dogenadon_pv">pv:</label>
-                    <progress id="dogenadonPv" max="100" value="100"> </progress>
+                    <progress id="dogenadonPv" min="0" max="100" value="100"> </progress>
                 </div>
             </div>
             <div id="katculubStatistique">
@@ -131,7 +131,7 @@
                 </div>
                 <div id="katculubLifeJauge">
                     <label id="katculub_pv">pv:</label>
-                    <progress id="katculubPv" max="100" value="100"> </progress>
+                    <progress id="katculubPv" min="0" max="100" value="100"> </progress>
                 </div>
             </div>
             <div id="bunarokStatistique">
@@ -140,7 +140,7 @@
                     </div>
                     <div id="bunarokLifeJauge">
                         <label id="bunarok_pv">pv:</label>
-                        <progress id="bunarokPv" max="100" value="100"> </progress>
+                        <progress id="bunarokPv" min="0" max="100" value="100"> </progress>
                     </div>
             </div>
         </div>
