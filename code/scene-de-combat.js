@@ -32,6 +32,9 @@ var succubisSelect = 0;
 var atkSelect = 0;
 var defSelect = 0;
 var skillSelect = 0;
+var charmDogenadon = 0;
+var charmKatculub = 0;
+var charmBunarok = 0;
 
 console.log(renPv);
 console.log(ragisPv);
@@ -84,7 +87,6 @@ atkInteraction.onclick = function(){
         if(turn==1 && renPv > 0){
             if(dogenadonSelect==1){
                 dogenadonPv = dogenadonPv - renAtk;
-                dialog.innerHTML = "vous taper le Dogenadon";
                 renDef=10;
                 document.getElementById("dogenadonPv").value = dogenadonPv;
                 cutOnDogenadon.style.display = "block";
@@ -101,7 +103,7 @@ atkInteraction.onclick = function(){
                 bunarokStatistique.style.display = "none";
                 dogenadonSelect = 0;
                 katculubSelect = 0;
-                bunarokSelect = 0
+                bunarokSelect = 0;
                 if(dogenadonPv <= 0){
                     dogenadonSprite.style.display = "none";
                 }
@@ -124,7 +126,7 @@ atkInteraction.onclick = function(){
                 bunarokStatistique.style.display = "none";
                 dogenadonSelect = 0;
                 katculubSelect = 0;
-                bunarokSelect = 0
+                bunarokSelect = 0;
                 if(katculubPv <= 0){
                     katculubSprite.style.display = "none";
                 }
@@ -147,19 +149,17 @@ atkInteraction.onclick = function(){
                 bunarokStatistique.style.display = "none";
                 dogenadonSelect = 0;
                 katculubSelect = 0;
-                bunarokSelect = 0
+                bunarokSelect = 0;
                 if(bunarokPv <= 0){
                     bunarokSprite.style.display = "none";
                 }
             }
         }
-        dialog.innerHTML = "choisissez votre cible";
         if(turn==2 && ragisPv > 0){
             renStatistique.style.display = "none";
             ragisStatistique.style.display = "block";
             alliaStatistique.style.display = "none";
             succubisStatistique.style.display = "none";
-            dialog.innerHTML = "qui attaquez vous?";
             if(dogenadonSelect==1){
                 dogenadonPv = dogenadonPv - ragisAtk;
                 ragisDef=10;
@@ -230,17 +230,23 @@ atkInteraction.onclick = function(){
                 }
             }
         }
-        dialog.innerHTML = "choisissez votre cible";
         if(turn==3 && alliaPv > 0){
             renStatistique.style.display = "none";
             ragisStatistique.style.display = "none";
             alliaStatistique.style.display = "block";
             succubisStatistique.style.display = "none";
-            dialog.innerHTML = "qui attaquez vous?";
             if(dogenadonSelect==1){
                 dogenadonPv = dogenadonPv - alliaAtk;
                 alliaDef=10;
                 document.getElementById("dogenadonPv").value = dogenadonPv;
+                magicpunchOnDogenadon.style.display = "block";
+                alliaAtkSprite.style.display = "block";
+                alliaIdleSprite.style.display = "none";
+                setTimeout(() =>{
+                    magicpunchOnDogenadon.style.display = "none";
+                    alliaAtkSprite.style.display = "none";
+                    alliaIdleSprite.style.display = "block";
+                }, "1000")
                 turn++;
                 dogenadonStatistique.style.display = "none";
                 katculubStatistique.style.display = "none";
@@ -256,6 +262,14 @@ atkInteraction.onclick = function(){
                 katculubPv = katculubPv - alliaAtk;
                 alliaDef=10;
                 document.getElementById("katculubPv").value = katculubPv;
+                magicpunchOnKatculub.style.display = "block";
+                alliaAtkSprite.style.display = "block";
+                alliaIdleSprite.style.display = "none";
+                setTimeout(() =>{
+                    magicpunchOnKatculub.style.display = "none";
+                    alliaAtkSprite.style.display = "none";
+                    alliaIdleSprite.style.display = "block";
+                }, "1000")
                 turn++;
                 dogenadonStatistique.style.display = "none";
                 katculubStatistique.style.display = "none";
@@ -271,6 +285,14 @@ atkInteraction.onclick = function(){
                 bunarokPv = bunarokPv - alliaAtk;
                 alliaDef=10;
                 document.getElementById("bunarokPv").value = bunarokPv;
+                magicpunchOnBunarok.style.display = "block";
+                alliaAtkSprite.style.display = "block";
+                alliaIdleSprite.style.display = "none";
+                setTimeout(() =>{
+                    magicpunchOnBunarok.style.display = "none";
+                    alliaAtkSprite.style.display = "none";
+                    alliaIdleSprite.style.display = "block";
+                }, "1000")
                 turn++;
                 dogenadonStatistique.style.display = "none";
                 katculubStatistique.style.display = "none";
@@ -283,17 +305,23 @@ atkInteraction.onclick = function(){
                 }
             }
         }
-        dialog.innerHTML = "choisissez votre cible";
         if(turn==4 && succubisPv > 0){
             renStatistique.style.display = "none";
             ragisStatistique.style.display = "none";
             alliaStatistique.style.display = "none";
             succubisStatistique.style.display = "block";
-            dialog.innerHTML = "qui attaquez vous?";
             if(dogenadonSelect==1){
                 dogenadonPv = dogenadonPv - succubisAtk;
                 succubisDef=10;
                 document.getElementById("dogenadonPv").value = dogenadonPv;
+                laserOnDogenadon.style.display = "block";
+                succubisAtkSprite.style.display = "block";
+                succubisIdleSprite.style.display = "none";
+                setTimeout(() =>{
+                    laserOnDogenadon.style.display = "none";
+                    succubisAtkSprite.style.display = "none";
+                    succubisIdleSprite.style.display = "block";
+                }, "1000")
                 turn++;
                 dogenadonStatistique.style.display = "none";
                 katculubStatistique.style.display = "none";
@@ -309,6 +337,14 @@ atkInteraction.onclick = function(){
                 katculubPv = katculubPv - succubisAtk;
                 renDef=10;
                 document.getElementById("katculubPv").value = katculubPv;
+                laserOnKatculub.style.display = "block";
+                succubisAtkSprite.style.display = "block";
+                succubisIdleSprite.style.display = "none";
+                setTimeout(() =>{
+                    laserOnKatculub.style.display = "none";
+                    succubisAtkSprite.style.display = "none";
+                    succubisIdleSprite.style.display = "block";
+                }, "1000")
                 turn++;
                 dogenadonStatistique.style.display = "none";
                 katculubStatistique.style.display = "none";
@@ -324,6 +360,14 @@ atkInteraction.onclick = function(){
                 bunarokPv = bunarokPv - succubisAtk;
                 renDef=10;
                 document.getElementById("bunarokPv").value = bunarokPv;
+                laserOnBunarok.style.display = "block";
+                succubisAtkSprite.style.display = "block";
+                succubisIdleSprite.style.display = "none";
+                setTimeout(() =>{
+                    laserOnBunarok.style.display = "none";
+                    succubisAtkSprite.style.display = "none";
+                    succubisIdleSprite.style.display = "block";
+                }, "1000")
                 turn++;
                 dogenadonStatistique.style.display = "none";
                 katculubStatistique.style.display = "none";
