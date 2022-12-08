@@ -61,61 +61,29 @@ document.getElementById("bunarokSprite").addEventListener("mouseover", function(
 atkInteraction.onclick = function(){
     if(turn==1 || turn==2 || turn==3 || turn==4){
         if(turn==1){
-            
-        }
-    }
-}
-
-
-/*if(turn==1){
-    renStatistique.style.display = "block";
-    
-    if(atkSelect==1){
-        console.log('je rentre dans le if')
-        dialog.innerHTML = "qui attaquer vous?";
-        if(dogenadonSelect==1){
-            dogenadonPv = dogenadonPv - renAtk;
-            renDef=10;
-            turn++;
-        }
-        else if(katculubSelect==1){
-            katculubPv = katculubPv - renAtk;
-            renDef=10;
-            turn++;
-        }
-        else if(bunarokSelect==1){
-            bunarokPv = bunarokPv - renAtk;
-            renDef=10;
-            turn++;
-        }
-    }
-    else if(defSelect==1){
-        renDef=20;
-        turn++;
-    }
-    else if(skillSelect==1){
-        if(RenSelect=1){
-            renPv=150;
-            turn++;
-        }
-        if(RagisSelect==1){
-            ragisPv=200;
-            turn++;
-        }
-        if(AlliaSelect==1){
-            alliaPv=100;
-            turn++;
-        }
-        if(SuccubisSelect==1){
-            succubisPv=100;
-            turn++;
-        }
-
+            renStatistique.style.display = "block";
+            if(atkInteraction==true){
+                console.log('je rentre dans le if')
+                dialog.innerHTML = "qui attaquer vous?";
+                if(dogenadonSelect==1){
+                    dogenadonPv = dogenadonPv - renAtk;
+                    renDef=10;
+                    turn++;
+                }
+                else if(katculubSelect==1){
+                    katculubPv = katculubPv - renAtk;
+                    renDef=10;
+                    turn++;
+                }
+                else if(bunarokSelect==1){
+                    bunarokPv = bunarokPv - renAtk;
+                    renDef=10;
+                    turn++;
+                }
+            }
+        }     
     }
 }
 
 
 
-
-    
-while(( renPv > 0 , ragisPv > 0 , alliaPv > 0 , succubisPv > 0 )||( dogenadon > 0 , katculub > 0 , bunarok > 0));*/
