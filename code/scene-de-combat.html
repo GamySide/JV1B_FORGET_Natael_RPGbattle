@@ -4,65 +4,75 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="scene-de-combat.css" />
     </head>
+
     <body>
-        <div id="interface">
-            <div id="dialogue">choisissez votre cible et agissez en conséquence</div>
-            <button id="atkInteraction"type="button">attaquer</button>
-            <button id="defInteraction"type="button">defendre</button>
-            <button id="skillInteraction"type="button">competence</button>
-            <div id="renStatistique">
+        <div id="interface"><!--création de l'interface-->
+            <div id="dialogue">choisissez votre cible et agissez en conséquence</div><!--création de la boite de dialogue-->
+
+            <button id="atkInteraction"type="button">attaquer</button><!--création du bouton attaquer-->
+
+            <button id="defInteraction"type="button">defendre</button><!--création du bouton defendre-->
+
+            <button id="skillInteraction"type="button">competence</button><!--création du bouton compétence-->
+
+            <div id="renStatistique"><!--création de la div de statistique pour ren-->
                 <div>
-                    <label id="ren">Ren</label>
+                    <label id="ren">Ren</label><!--le nom du personage-->
                 </div>
-                <div id="renLifeJauge">
-                    <label id="ren_pv">pv:</label>
-                    <progress id="renPv" min="0" max="150" value="150"></progress>
+                <div id="renLifeJauge"><!--la partie sur sa santé-->
+                    <label id="ren_pv">pv:</label><!--le label pv-->
+                    <progress id="renPv" min="0" max="150" value="150"></progress><!--la jauge de vie-->
                 </div>
-                <div id="renManaJauge">
-                    <label id="ren_mana">pm:</label>
-                    <progress id="renMana" min="0" max="80" value="80"></progress>
+                <div id="renManaJauge"><!--la partie sur son mana-->
+                    <label id="ren_mana">pm:</label><!--le label mana-->
+                    <progress id="renMana" min="0" max="80" value="80"></progress><!--la jauge de mana-->
                 </div>
             </div>
-            <div id="alliaStatistique">
+
+            <div id="alliaStatistique"><!--création de la div de statistique pour allia-->
                 <div>
-                    <label id="allia">Allia</label>
+                    <label id="allia">Allia</label><!--le nom du personage-->
                 </div>
-                <div id="alliaLifeJauge">
-                    <label id="allia_pv">pv:</label>
-                    <progress id="alliaPv" min="0" max="100" value="100"></progress>
+                <div id="alliaLifeJauge"><!--la partie sur sa santé-->
+                    <label id="allia_pv">pv:</label><!--le label pv-->
+                    <progress id="alliaPv" min="0" max="100" value="100"></progress><!--la jauge de vie-->
                 </div>
-                <div id="alliaManaJauge">
-                    <label id="allia_mana">pm:</label>
-                    <progress id="alliaMana" min="0" max="200" value="200"></progress>
+                <div id="alliaManaJauge"><!--la partie sur son mana-->
+                    <label id="allia_mana">pm:</label><!--le label mana-->
+                    <progress id="alliaMana" min="0" max="200" value="200"></progress><!--la jauge de mana-->
                 </div>
             </div>
-            <div id="ragisStatistique">
+
+            <div id="ragisStatistique"><!--création de la div de statistique pour ragis-->
                 <div>
-                    <label id="ragis">Ragis</label>
+                    <label id="ragis">Ragis</label><!--le nom du personage-->
                 </div>
-                <div id="ragisLifeJauge">
-                    <label id="ragis_pv">pv:</label>
-                    <progress id="ragisPv" min="0" max="200" value="200"></progress>
+                <div id="ragisLifeJauge"><!--la partie sur sa santé-->
+                    <label id="ragis_pv">pv:</label><!--le label pv-->
+                    <progress id="ragisPv" min="0" max="200" value="200"></progress><!--la jauge de vie-->
                 </div>
-                <div id="ragisManaJauge">
-                    <label id="ragis_mana">pm:</label>
-                    <progress id="ragisMana" min="0" max="40" value="40"></progress>
+                <div id="ragisManaJauge"><!--la partie sur son mana-->
+                    <label id="ragis_mana">pm:</label><!--le label mana-->
+                    <progress id="ragisMana" min="0" max="40" value="40"></progress><!--la jauge de mana-->
                 </div>
             </div>
-            <div id="succubisStatistique">
+
+            <div id="succubisStatistique"><!--création de la div de statistique pour succubis-->
                 <div>
-                    <label id="succubis">Succubis</label>
+                    <label id="succubis">Succubis</label><!--le nom du personage-->
                 </div>
-                <div id="succubisLifeJauge">
-                    <label id="succubis_pv">pv:</label>
-                    <progress id="succubisPv" min="0" max="100" value="100"></progress>
+                <div id="succubisLifeJauge"><!--la partie sur sa santé-->
+                    <label id="succubis_pv">pv:</label><!--le label pv-->
+                    <progress id="succubisPv" min="0" max="100" value="100"></progress><!--la jauge de vie-->
                 </div>
-                <div id="succubisManaJauge">
-                    <label id="succubis_mana">pm:</label>
-                    <progress id="succubisMana" min="0" max="160" value="160"></progress>
+                <div id="succubisManaJauge"><!--la partie sur son mana-->
+                    <label id="succubis_mana">pm:</label><!--le label mana-->
+                    <progress id="succubisMana" min="0" max="160" value="160"></progress><!--la jauge de mana-->
                 </div>
             </div>
         </div>
+
+        <!--introduction de tout les strite-->
         <img id="renIdleSprite" src=../sprite/Ren-Idle-Sprite.gif></img>
         <img id="renAtkSprite" src=../sprite/Ren-Attack-Sprite.gif></img>
         <img id="renSkillSprite" src=../sprite/Ren-Skill-Sprite.gif></img>
@@ -116,31 +126,35 @@
         <img id="seismeOnKatculub" src=../sprite/séisme.gif></img>
         <img id="seismeOnBunarok" src=../sprite/séisme.gif></img>
         <div id="monsterInterface">
-            <div id="dogenadonStatistique">
+
+
+            <div id="dogenadonStatistique"><!--création de la div de statistique pour dogenadon-->
                 <div>
-                    <label id="dogenadon">dogenadon</label>
+                    <label id="dogenadon">dogenadon</label><!--le nom du monstre-->
                 </div>
-                <div id="dogenadonLifeJauge">
-                    <label id="dogenadon_pv">pv:</label>
-                    <progress id="dogenadonPv" min="0" max="100" value="100"> </progress>
+                <div id="dogenadonLifeJauge"><!--la partie sur sa santé-->
+                    <label id="dogenadon_pv">pv:</label><!--le label santé-->
+                    <progress id="dogenadonPv" min="0" max="100" value="100"> </progress><!--sa jauge de santé-->
                 </div>
             </div>
-            <div id="katculubStatistique">
+
+            <div id="katculubStatistique"><!--création de la div de statistique pour katculub-->
                 <div>
-                    <label id="katculub">katculub</label>
+                    <label id="katculub">katculub</label><!--le nom du monstre-->
                 </div>
-                <div id="katculubLifeJauge">
-                    <label id="katculub_pv">pv:</label>
-                    <progress id="katculubPv" min="0" max="100" value="100"> </progress>
+                <div id="katculubLifeJauge"><!--la partie sur sa santé-->
+                    <label id="katculub_pv">pv:</label><!--le label santé-->
+                    <progress id="katculubPv" min="0" max="100" value="100"> </progress><!--sa jauge de santé-->
                 </div>
             </div>
-            <div id="bunarokStatistique">
+
+            <div id="bunarokStatistique"><!--création de la div de statistique pour bunarok-->
                     <div>
-                        <label id="bunarok">bunarok</label>
+                        <label id="bunarok">bunarok</label><!--le nom du monstre-->
                     </div>
-                    <div id="bunarokLifeJauge">
-                        <label id="bunarok_pv">pv:</label>
-                        <progress id="bunarokPv" min="0" max="100" value="100"> </progress>
+                    <div id="bunarokLifeJauge"><!--le nom du monstre-->
+                        <label id="bunarok_pv">pv:</label><!--le label santé-->
+                        <progress id="bunarokPv" min="0" max="100" value="100"> </progress><!--sa jauge de santé-->
                     </div>
             </div>
         </div>

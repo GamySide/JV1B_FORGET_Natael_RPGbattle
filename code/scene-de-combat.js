@@ -1,3 +1,4 @@
+/*création des variable*/
 var dialog = document.getElementById("dialogue");
 var renPv = 150
 var ragisPv = 200
@@ -47,6 +48,7 @@ var ragisStatut = 0;
 var alliaStatut = 0;
 var succubisStatut = 0;
 
+/*controle des statistique*/
 console.log(renPv);
 console.log(ragisPv);
 console.log(alliaPv);
@@ -56,6 +58,8 @@ console.log(ragisMana);
 console.log(alliaMana);
 console.log(succubisMana);
 
+
+/*création des interaction*/
 document.getElementById("dogenadonSprite").addEventListener("mouseover", function(){
     dogenadonStatistique.style.display = "block";
     katculubStatistique.style.display = "none";
@@ -75,7 +79,6 @@ document.getElementById("dogenadonSprite").addEventListener("click", function(){
     dogenadonSelect = 1;
     katculubSelect = 0;
     bunarokSelect = 0
-
 });
 document.getElementById("katculubSprite").addEventListener("click", function(){
     dogenadonSelect = 0;
@@ -90,7 +93,7 @@ document.getElementById("bunarokSprite").addEventListener("click", function(){
 
 
 
-
+/*les tour en attaque*/
 renStatistique.style.display = "block";
 ragisStatistique.style.display = "none";
 alliaStatistique.style.display = "none";
@@ -646,6 +649,7 @@ atkInteraction.onclick = function () {
         }
     }
 }
+/*si le joueur décide qu'un perso*/
 defInteraction.onclick = function () {
     if (turn == 1 || turn == 2 || turn == 3 || turn == 4) {
         if (turn == 1 && renPv > 0){
@@ -670,6 +674,7 @@ defInteraction.onclick = function () {
         }
     }
 }
+/*définition des skill*/
 skillInteraction.onclick = function () {
     if (turn == 1 || turn == 2 || turn == 3 || turn == 4) {
         if (turn == 1 && renPv > 0){
